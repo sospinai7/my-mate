@@ -13,7 +13,7 @@ public class DataBase : MonoBehaviour
     {
         CreateDB();
 
-        AddPlayer("Jose Miguel", "jgalindo", "890", 1, "jgalindo@gmail.com");
+        //AddPlayer("Jose Miguel", "jgalindo", "890", 1, "jgalindo@gmail.com");
 
         DisplayPlayers();
     }

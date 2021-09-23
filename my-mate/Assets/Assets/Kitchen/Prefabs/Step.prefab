@@ -252,9 +252,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 899118831548207971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38148873c60514042afef696cbd03367, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b21616531647470ab589d2c2fa6a970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eats: []
+  eatButtons: []
+  backToMain: {fileID: 0}
+  backToSelectEats: {fileID: 0}
 --- !u!1 &1507914953889185033
 GameObject:
   m_ObjectHideFlags: 0
