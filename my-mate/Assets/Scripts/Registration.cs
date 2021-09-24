@@ -2,49 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Networking;
+using Mono.Data.Sqlite;
+using System.Data;
+using UnityEngine.SceneManagement;
 
 public class Registration : MonoBehaviour
 {
-    public InputField nameField;
-    public InputField emailField;
-    public InputField userNameField;
-    public InputField passwordField;
-    public InputField ageField;
+    private string dbName = "URI=file:my-mate.db";
 
-    public Button completeButton;
+    public InputField nameInput;
+    public InputField emailInput;
+    public InputField userNameInput;
+    public InputField passwordInput;
 
-    public void CallRegister() {
-        Debug.Log("Entro a la funcion callRegister");
-        StartCoroutine(Register());
+    void Start()
+    {
+        CreateDB();
     }
 
-    IEnumerator Register()
+    public void CreateDB()
     {
-        Debug.Log("Entro al IEnumerable callRegister");
-        WWWForm form = new WWWForm();
-        form.AddField("name", nameField.text);
-        form.AddField("email", emailField.text);
-        form.AddField("userName", userNameField.text);
-        form.AddField("password", passwordField.text);
-        form.AddField("age", ageField.text);
-
-        UnityWebRequest www = UnityWebRequest.Post("http://localHost/sqlconnect/register.php", form);
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError) 
+        using (var connection = new SqliteConnection(dbName)) 
         {
-            Debug.Log("User creation failed. Error #" + www.error);
-        }
-        else
-        {
-            Debug.Log("User created successfully.");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-        }
+            connection.Open();
+
+            using (var command = connection.CreateCommand()) 
+            {
+                command.CommandText = "CREATE TABLE IF NOT EXISTS players (name VARCHAR(50), userName VARCHAR(50), password VARCHAR(50), level INT, email VARCHAR(50))";
+                command.ExecuteNonQuery();
+            }
+
+            connection.Close();
+        }           
     }
 
-    public void VerifyInput()
+    public void AddPlayer()
     {
-        completeButton.interactable = (nameField.text.Length >= 8 && passwordField.text.Length >= 8);
+        using (var connection = new SqliteConnection(dbName)) 
+        {
+            connection.Open();
+
+            using (var command = connection.CreateCommand())
+            {
+                 command.CommandText = "INSERT INTO players (name, userName, password, level, email) VALUES ('" + nameInput.text + "', '" + userNameInput.text + "', '" + passwordInput.text + "', '" + 1 + "', '" + emailInput.text + "');";
+                 command.ExecuteNonQuery();
+            }
+            SceneManager.LoadScene("Login");
+            connection.Close();
+        }
     }
 }

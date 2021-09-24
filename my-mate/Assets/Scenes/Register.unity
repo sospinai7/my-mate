@@ -1733,7 +1733,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2008120488}
         m_TargetAssemblyTypeName: Registration, Assembly-CSharp
-        m_MethodName: CallRegister
+        m_MethodName: AddPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2646,7 +2646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1584974992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3117,9 +3117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f6d0b381a877742acc3958e75b5ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameField: {fileID: 492084870}
-  emailField: {fileID: 1022741932}
-  userNameField: {fileID: 470104826}
-  passwordField: {fileID: 79940498}
-  ageField: {fileID: 246040013}
-  completeButton: {fileID: 902652657}
+  nameInput: {fileID: 492084870}
+  emailInput: {fileID: 1022741932}
+  userNameInput: {fileID: 470104826}
+  passwordInput: {fileID: 79940498}
