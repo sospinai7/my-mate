@@ -13,7 +13,7 @@ public class SelectFood : MonoBehaviour
 
     private void Start()
     {
-        hideSteps();
+        //hideSteps();
         backToSelectEats.SetActive(false);
     }
 
@@ -53,30 +53,46 @@ public class SelectFood : MonoBehaviour
 
     public void eatAnIceCream()
     {
+        /*
         hideSteps();
         hideButtons();
         eats[0].SetActive(true);
+        */
+        MainMenu.eatVariable += 2;
+        SceneManager.LoadScene("main");
     }
 
     public void eatAChicken()
     {
+        /*
         hideSteps();
         hideButtons();
         eats[1].SetActive(true);
+        */
+        MainMenu.eatVariable += 4;
+        SceneManager.LoadScene("main");
     }
 
     public void eatApple()
     {
+        /*
         hideSteps();
         hideButtons();
         eats[2].SetActive(true);
+        */
+        MainMenu.eatVariable += 8;
+        SceneManager.LoadScene("main");
     }
 
     public void eatASalad()
     {
+        /*
         hideSteps();
         hideButtons();
         eats[3].SetActive(true);
+        */
+        MainMenu.eatVariable += 16;
+        SceneManager.LoadScene("main");
     }
 
 /*
