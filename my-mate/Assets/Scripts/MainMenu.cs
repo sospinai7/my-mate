@@ -24,6 +24,13 @@ public class MainMenu : MonoBehaviour
         }  else if (gameVariable > 101f) {
             gameVariable = 101f;
         }
+        if (eatVariable < 0) {
+            eatVariable = 0f;
+        } else if (cleanVariable < 0) {
+            cleanVariable = 0f;
+        }  else if (gameVariable < 0) {
+            gameVariable = 0f;
+        }
 
         if (!useFixedUpdate) {
             eatVariable -= changePerSecond + Time.deltaTime;

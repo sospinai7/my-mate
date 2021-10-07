@@ -9,4 +9,9 @@ public class GameRoom : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    public void GoToHockey()
+    {
+        SceneManager.LoadScene("Hockey");
+    }
 }
