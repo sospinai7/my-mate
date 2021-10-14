@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 250718291}
   m_Layer: 0
   m_Name: border1 (1)
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250718290}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 19a701877d9a4694aaf20ec7465ff501, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 278364644}
   m_Layer: 0
   m_Name: border1 (2)
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -340,7 +340,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278364643}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 19a701877d9a4694aaf20ec7465ff501, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 366974460}
   m_Layer: 0
   m_Name: border1 (3)
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,7 +436,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366974455}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 19a701877d9a4694aaf20ec7465ff501, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -572,7 +572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1568852559}
   disk: {fileID: 951576414}
-  movementSpeed: 10
+  magnitudePlayer: 100
+  magnitudeBorder: 50
 --- !u!23 &951576417
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -663,7 +664,7 @@ GameObject:
   - component: {fileID: 1106139559}
   m_Layer: 0
   m_Name: border1
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -675,7 +676,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106139558}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 19a701877d9a4694aaf20ec7465ff501, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
