@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Disk : MonoBehaviour
 {
-    public GameObject Player;
     public GameObject disk;
+    private Hockey hockey;
     public float magnitudePlayer;
-
     public float magnitudeBorder;
-    private bool moveDisk = false;
-
     private float gameObjectPositionX;
     private float gameObjectPositionY;
     private float gameObjectPositionZ;
+
+    private void Awake() {
+        hockey = GameObject.FindObjectOfType<Hockey>();
+    }
 
     void OnMouseDrag()
     {
@@ -22,29 +23,36 @@ public class Disk : MonoBehaviour
         transform.position = new Vector3(pos_move.x, transform.position.y, pos_move.z);
     }
 
-    private void OnMouseExit()
-    {
-        moveDisk = false;
-    }
-
     private void OnCollisionEnter(Collision other) {
         // If the object we hit is the enemy
         if (other.gameObject.tag == "player")
         {  
-            //var magnitude = 50;
             var force = transform.position - other.transform.position;
             force.Normalize ();
             disk.GetComponent<Rigidbody> ().AddForce (force * magnitudePlayer);
-            Debug.Log("Me toco el azul");
         }
 
         if (other.gameObject.tag == "border")
         {  
-            //var magnitude = 50;
             var force = transform.position - other.transform.position;
             force.Normalize ();
             disk.GetComponent<Rigidbody> ().AddForce (-force * magnitudeBorder);
-            Debug.Log("Me toco el borde");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "blueGoal")
+        {  
+            hockey.redGoal = true;
+            Instantiate(disk, new Vector3(0, 0.08f, 0), Quaternion.identity);
+            Destroy(disk);
+        }
+
+        if (other.gameObject.tag == "redGoal")
+        {  
+            hockey.blueGoal = true;
+            Instantiate(disk, new Vector3(0, 0.08f, 0), Quaternion.identity);
+            Destroy(disk);
         }
     }
 }
