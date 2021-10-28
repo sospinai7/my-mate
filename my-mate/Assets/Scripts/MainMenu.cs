@@ -53,16 +53,16 @@ public class MainMenu : MonoBehaviour
 
    public void GoToKitcenRoom()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("KitchenRoom");
     }
 
     public void GoToCleaningRoom()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("CleaningRoom");
     }
 
     public void GoToGameRoom()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("GameRoom");
     }
 }

@@ -9,6 +9,11 @@ TagManager:
   - border
   - blueGoal
   - redGoal
+  - blueCard
+  - redCard
+  - blackCard
+  - whiteCard
+  - PurpleCard
   layers:
   - Default
   - TransparentFX
