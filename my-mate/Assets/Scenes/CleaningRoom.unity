@@ -473,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3bef8057b8c61a14cac0bae294a86a0a, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (6)
@@ -541,7 +541,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3bef8057b8c61a14cac0bae294a86a0a, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Take the towel and dry the body
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 28.35
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: PurpleCard
@@ -732,6 +740,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 850802069}
     m_Modifications:
+    - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (7)
@@ -796,6 +808,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Take off clothes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 36.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: redCard
@@ -817,7 +841,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 66ab895a773b05943a88e20dd4438866, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (5)
@@ -885,7 +909,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 66ab895a773b05943a88e20dd4438866, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: 'Turn on the shower '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 36.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: whiteCard
@@ -1189,6 +1221,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: NT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: blackCard
@@ -1609,7 +1649,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 91ff47fd932fc4f448ed747401ea4a54, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (3)
@@ -1677,7 +1717,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 91ff47fd932fc4f448ed747401ea4a54, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Turn off the shower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 36.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: blueCard
@@ -1778,7 +1826,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 66ab895a773b05943a88e20dd4438866, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (1)
@@ -1846,7 +1894,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 66ab895a773b05943a88e20dd4438866, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: 'Turn on the shower '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 36.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: whiteCard
@@ -1868,7 +1924,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 91ff47fd932fc4f448ed747401ea4a54, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (8)
@@ -1936,7 +1992,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 91ff47fd932fc4f448ed747401ea4a54, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Turn off the shower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 36.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: blueCard
@@ -1963,7 +2027,7 @@ PrefabInstance:
     - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3bef8057b8c61a14cac0bae294a86a0a, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card (4)
@@ -2031,7 +2095,15 @@ PrefabInstance:
     - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3bef8057b8c61a14cac0bae294a86a0a, type: 2}
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Take the towel and dry the body
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 28.35
+      objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
       value: PurpleCard
@@ -2381,6 +2453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 850802069}
     m_Modifications:
+    - target: {fileID: 1129350710644993693, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
     - target: {fileID: 1419622241379817678, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_Name
       value: Card
@@ -2448,6 +2524,34 @@ PrefabInstance:
     - target: {fileID: 2484544264942305484, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769478434709245162, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 291c33b641f9da848b4e803226236bc0, type: 2}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_text
+      value: Take off clothes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontSize
+      value: 24.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313880877718000543, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7761296953932491173, guid: 2f04f74329892c242a7a673cbc8b39eb, type: 3}
       propertyPath: m_TagString
