@@ -13,12 +13,18 @@ public class CleaningRoomScript : MonoBehaviour
     public static string secondCardParent;
     public static string firstCard;
     public static string secondCard;
+    public GameObject[] takeABathList;
+    public GameObject takeABathListBackArrow;
     private int cardsCount = 0;
+    public GameObject[] mainlySceneAssets;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (var asset in takeABathList)
+        {
+            asset.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +43,7 @@ public class CleaningRoomScript : MonoBehaviour
         }
 
         if(cardsCount == 4) {
+            MainMenu.cleanVariable += 7;
             StartCoroutine(finishGame());
             SceneManager.LoadScene("main");
         }
@@ -61,5 +68,31 @@ public class CleaningRoomScript : MonoBehaviour
     public void GoToMain()
     {
         SceneManager.LoadScene("main");
+    }
+
+    public void TakeABath() {
+        foreach (var asset in takeABathList)
+        {
+            asset.SetActive(true);
+        }
+        turnOffScene();
+    }
+
+    void turnOffScene() {
+        foreach (var asset in mainlySceneAssets)
+        {
+            asset.SetActive(false);
+        }
+    }
+
+    void turnOnScene() {
+        foreach (var asset in mainlySceneAssets)
+        {
+            asset.SetActive(true);
+        }
+    }
+
+    public void returnToCleaningLobbby() {
+        SceneManager.LoadScene("CleaningRoom");
     }
 }

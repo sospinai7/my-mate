@@ -33,6 +33,7 @@ public class Hockey : MonoBehaviour
         if (redScore == 3 || blueScore == 3) {
             blueScore = 0;
             redScore = 0;
+            MainMenu.gameVariable += 10;
             SceneManager.LoadScene("main");
             Debug.Log("Se acaba el partido");
         }
