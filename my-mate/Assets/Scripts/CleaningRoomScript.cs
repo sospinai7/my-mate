@@ -17,6 +17,8 @@ public class CleaningRoomScript : MonoBehaviour
     public GameObject takeABathListBackArrow;
     private int cardsCount = 0;
     public GameObject[] mainlySceneAssets;
+    public GameObject[] list;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,12 @@ public class CleaningRoomScript : MonoBehaviour
         {
             asset.SetActive(false);
         }
+        /*
+        foreach (var step in list)
+        {
+            step.SetActive(false);
+        }
+        */
     }
 
     // Update is called once per frame
@@ -45,7 +53,6 @@ public class CleaningRoomScript : MonoBehaviour
         if(cardsCount == 4) {
             MainMenu.cleanVariable += 7;
             StartCoroutine(finishGame());
-            SceneManager.LoadScene("main");
         }
     }
 

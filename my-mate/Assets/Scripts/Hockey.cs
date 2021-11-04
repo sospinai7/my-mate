@@ -14,6 +14,11 @@ public class Hockey : MonoBehaviour
     public Text blueTextScore;
     public Text redTextScore;
 
+    public void goToMain()
+    {
+        SceneManager.LoadScene("main");
+    }
+
     private void LateUpdate() {
         if (redGoal)
         {  

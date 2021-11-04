@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameRoom : MonoBehaviour
 {
+
     public void GoToMain()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("main");
     }
 
     public void GoToHockey()

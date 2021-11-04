@@ -6,6 +6,6 @@ public class Bathroom : MonoBehaviour
 {
     public void GoToMain()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("main");
     }
 }

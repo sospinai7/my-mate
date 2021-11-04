@@ -7,6 +7,6 @@ public class KitchenRoom : MonoBehaviour
 {
     public void GoToMain()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("main");
     }
 }
