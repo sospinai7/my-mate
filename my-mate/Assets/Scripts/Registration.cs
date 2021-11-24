@@ -17,9 +17,10 @@ public class Registration : MonoBehaviour
 
     void Start()
     {
-        CreateDB();
+        //CreateDB();
     }
 
+    /*
     public void CreateDB()
     {
         using (var connection = new SqliteConnection(dbName)) 
@@ -35,6 +36,7 @@ public class Registration : MonoBehaviour
             connection.Close();
         }           
     }
+    */
 
     public void AddPlayer()
     {
