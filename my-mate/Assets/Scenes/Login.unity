@@ -152,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a98715e48ea304f85b80fcee61b069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameInput: {fileID: 0}
+  emailInput: {fileID: 0}
+  userNameInput: {fileID: 0}
+  passwordInput: {fileID: 0}
 --- !u!4 &7846443
 Transform:
   m_ObjectHideFlags: 0
@@ -1682,8 +1686,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1890830923}
   m_TextComponent: {fileID: 226889711}
   m_Placeholder: {fileID: 807350679}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
